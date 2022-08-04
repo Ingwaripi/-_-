@@ -18,9 +18,9 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 
 if (num1 == num2 * num2) 
 {
-    Console.Write("Первое число равно квадрату второго числа");
+    Console.Write($"Первое число {num1} равно квадрату второго числа {num2}");
 }
 else
 {
-    Console.Write("False");
+    Console.Write($"Первое число {num1} не равно квадрату второго числа {num2}");
 }
