@@ -14,5 +14,18 @@ int secondDigit = number % 10;
 // else if (firstDigit > secondDigit ) Console.WriteLine($"Наибольшая цифра числа {number} => {firstDigit}");
 // else Console.WriteLine($"Наибольшая цифра числа {number} => {secondDigit}");
 // //          if                                    else
-string result = firstDigit == secondDigit ? "Цифры равны" : firstDigit > secondDigit ? firstDigit : secondDigit; // тернареый оператор
-Console.WriteLine($"Наибольшая цифра числа {number} => {result}");
+// string result = firstDigit == secondDigit ? "Цифры равны" 
+// : firstDigit > secondDigit ? firstDigit.ToString() : secondDigit.ToString(); // тернарный оператор
+// Console.WriteLine($"Наибольшая цифра числа {number} => {result}"); 
+
+int MaxDigit(int num)
+{
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
+    if(firstDigit == secondDigit) return 0;
+    return firstDigit > secondDigit ? firstDigit : secondDigit;
+}
+int result = MaxDigit(number);
+string res = result == 0 ? "Цифры равны" : result.ToString();
+
+Console.WriteLine($"Наибольшая цифра числа {number} => {res}");
