@@ -19,3 +19,13 @@ void ShowFibonacci (int num)
     Console.WriteLine();
 }
 ShowFibonacci(num);
+
+// рекурсия 
+// int number = 13;
+// void DecToBin(int num)
+// {
+//     if(num == 0) return;
+//     DecToBin(num / 2);
+//     Console.Write(num % 2);
+// }
+// DecToBin(number);
